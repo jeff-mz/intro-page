@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- use Grid and flexbox  -->
+    <!-- mobile first  -->
+    <!-- use Bem structure -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/tablet.css">
+    <link rel="stylesheet" href="./style/desktop.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <script defer src="./app.js"></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+
+  <body>
+    <main id="main">
+      <section id="header">
+        <nav class="desktop-nav">
+          <img src="./images/logo.svg" alt="logo-icon" class="logo">
+          <!-- Desktop Menu -->
+          <ul class="desktop-menu">
+            <li class="desktop-item desktop-item1 item" data-index="1">Features
+              <span><img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" class="arrow-icon"
+                  data-index="1"></span>
+              <ul class="sub-items">
+                <li class="subitem">
+                  <span><img src="./images/icon-todo.svg" alt="icon-todo" class="icon"></span>
+                  todo list
+                </li>
+                <li class="subitem">
+                  <span><img src="./images/icon-calendar.svg" alt="icon-calendar" class="icon"></span>
+                  calender
+                </li>
+                <li class="subitem">
+                  <span><img src="./images/icon-reminders.svg" alt="icon-reminders" class="icon"></span>
+                  reminders
+                </li>
+                <li class="subitem">
+                  <span><img src="./images/icon-planning.svg" alt="icon-planning" class="icon"></span>
+                  planning
+                </li>
+              </ul>
+            </li>
+            <li class="desktop-item desktop-item2 item" data-index="2">Company
+              <span><img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" class="arrow-icon"
+                  data-index="2"></span>
+              <ul class="sub-items">
+                <li class="subitem">history</li>
+                <li class="subitem">our team</li>
+                <li class="subitem">blog</li>
+              </ul>
+            </li>
+            <li class="desktop-item desktop-item3 item">Careers</li>
+            <li class="desktop-item desktop-item4 item">About</li>
+          </ul>
+          <!-- User Profile  -->
+          <div class="desktop-profile">
+            <p class="login">Login</p>
+            <p class="register">Register</p>
+          </div>
+        </nav>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+          <img src="./images/logo.svg" alt="logo-icon" class="logo">
+          <div class="mobile-menu">
+            <img src="./images/icon-menu.svg" alt="menu" class="open-btn">
+            <div class="menu-items-container">
+              <ul class="mobile-items">
+                <li class="mobile-item mobile-icon">
+                  <img src="./images/icon-close-menu.svg" alt="close-icon" class="close-btn">
+                </li>
+                <li class="mobile-item mobile-item1 item" data-index="3">Features
+                  <span><img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" class="arrow-icon"
+                      data-index="3"></span>
+                  <ul class="sub-items">
+                    <li class="subitem">
+                      <span><img src="./images/icon-todo.svg" alt="icon-todo" class="icon"></span>
+                      todo list
+                    </li>
+                    <li class="subitem">
+                      <span><img src="./images/icon-calendar.svg" alt="icon-calendar" class="icon"></span>
+                      calender
+                    </li>
+                    <li class="subitem">
+                      <span><img src="./images/icon-reminders.svg" alt="icon-reminders" class="icon"></span>
+                      reminders
+                    </li>
+                    <li class="subitem">
+                      <span><img src="./images/icon-planning.svg" alt="icon-planning" class="icon"></span>
+                      planning
+                    </li>
+                  </ul>
+                </li>
+                <li class="mobile-item mobile-item2 item" data-index="4">Company
+                  <span><img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" class="arrow-icon"
+                      data-index="4"></span>
+                  <ul class="sub-items">
+                    <li class="subitem">history</li>
+                    <li class="subitem">our team</li>
+                    <li class="subitem">blog</li>
+                  </ul>
+                </li>
+                <li class="mobile-item mobile-item3 item">Careers</li>
+                <li class="mobile-item mobile-item4 item ">About</li>
+                <!-- User Profile  -->
+                <ul class="profile">
+                  <li class="mobile-item mobile-item5">
+                    <p class="login">Login</p>
+                  </li>
+                  <li class="mobile-item mobile-item6">
+                    <p class="register">Register</p>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <section id="body">
+        <div class="hero">
+          <picture>
+            <source class="hero-img" media="(min-width: 1024px)" srcset="./images/image-hero-desktop.png">
+            <img class="hero-img" src="./images/image-hero-mobile.png" alt="hero image">
+          </picture>
+        </div>
+        <div class="about">
+          <h1 class="title">Make remote work </h1>
+          <p class="desc">
+            Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn">Learn more</button>
+          <ul class="clients">
+            <li><img src="./images/client-databiz.svg" alt="our client" class="cleint cleint-1"></li>
+            <li><img src="./images/client-audiophile.svg" alt="our client" class="cleint cleint-2"></li>
+            <li><img src="./images/client-meet.svg" alt="our client" class="cleint cleint-3"></li>
+            <li><img src="./images/client-maker.svg" alt="our client" class="cleint cleint-4"></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://www.frontendmentor.io/profile/jeff-dev0">jafar mirzapoor</a>.
+        </div>
+      </section>
+    </main>
+  </body>
+
+</html>

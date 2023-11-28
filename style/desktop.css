@@ -1,0 +1,85 @@
+@media (min-width: 1024px) {
+  #main #header .mobile-nav {
+    display: none;
+  }
+  #main #header .desktop-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1.3rem 0rem;
+  }
+  #main #header .desktop-nav .desktop-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 3rem;
+  }
+  #main #header .desktop-nav .desktop-menu .desktop-item1,
+  #main #header .desktop-nav .desktop-menu .desktop-item2 {
+    position: relative;
+  }
+  #main #header .desktop-nav .desktop-menu .desktop-item {
+    margin: 0rem 1rem;
+    cursor: pointer;
+  }
+  #main #header .desktop-nav .desktop-menu .desktop-item .sub-items {
+    display: none;
+    flex-direction: column;
+    width: 100px;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #f1f1ff;
+    position: absolute;
+  }
+  #main #header .desktop-nav .desktop-menu .desktop-item .sub-items .subitem {
+    margin: 0.3rem 0rem;
+  }
+  #main #header .desktop-nav .desktop-menu .desktop-item .sub-items .subitem .icon {
+    margin-right: 3px;
+  }
+  #main #header .desktop-nav .desktop-profile {
+    width: 45%;
+    padding-left: 2rem;
+    text-align: end;
+  }
+  #main #header .desktop-nav .desktop-profile .login,
+  #main #header .desktop-nav .desktop-profile .register {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px 16px;
+  }
+  #main #header .desktop-nav .desktop-profile .register {
+    border: 1px solid #141414;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+  #main #body {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding: 1rem 5rem;
+  }
+  #main #body .hero {
+    width: 40%;
+  }
+  #main #body .hero .hero-img {
+    width: 100%;
+  }
+  #main #body .about {
+    width: 70%;
+    align-items: flex-start;
+  }
+  #main #body .about .title {
+    width: 450px;
+    text-align: left;
+    font-size: 72px;
+    font-weight: 800;
+  }
+  #main #body .about .desc {
+    width: 450px;
+    font-size: 18px;
+    text-align: left;
+    margin: 2rem 0rem;
+  }
+}/*# sourceMappingURL=desktop.css.map */

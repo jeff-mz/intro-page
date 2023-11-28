@@ -1,0 +1,90 @@
+@media (min-width: 1024px) {
+  #main {
+    #header {
+      .mobile-nav {
+        display: none;
+      }
+      .desktop-nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1.3rem 0rem;
+        .desktop-menu {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          margin-left: 3rem;
+          .desktop-item1,
+          .desktop-item2 {
+            position: relative;
+          }
+          .desktop-item {
+            margin: 0rem 1rem;
+            cursor: pointer;
+            .sub-items {
+              display: none;
+              flex-direction: column;
+              width: 100px;
+              font-size: 12px;
+              border-radius: 10px;
+              padding: 0.5rem;
+              background-color: #f1f1ff;
+              position: absolute;
+              .subitem {
+                margin: 0.3rem 0rem;
+                .icon {
+                  margin-right: 3px;
+                }
+              }
+            }
+          }
+        }
+        .desktop-profile {
+          width: 45%;
+          padding-left: 2rem;
+          text-align: end;
+          .login,
+          .register {
+            cursor: pointer;
+            display: inline-block;
+            margin: 0px 16px;
+          }
+          .register {
+            border: 1px solid #141414;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+    #body {
+      flex-direction: row-reverse;
+      align-items: flex-end;
+
+      padding: 1rem 5rem;
+      .hero {
+        width: 40%;
+        .hero-img {
+          width: 100%;
+        }
+      }
+      .about {
+        width: 70%;
+        align-items: flex-start;
+        .title {
+          width: 450px;
+          text-align: left;
+          font-size: 72px;
+          font-weight: 800;
+        }
+        .desc {
+          width: 450px;
+          font-size: 18px;
+          text-align: left;
+          margin: 2rem 0rem;
+        }
+      }
+    }
+  }
+}
